@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<title>Zarezerwuj wizytę lub badanie</title>
+</head>
+
+<body>
+	<div class="container reservationBox">
+		<div class="row">
+			<div class="col-sm reservation">
+				<h1>Zarezerwuj wizytę lub badanie</h1>
+			</div>
+		</div>
+		<form action="/action_page.php">
+			<div class="row box">
+				<div class="col-lg-4 col-xs-12">
+
+					<div>
+						<label for="cities">Miasto <i class="fa fa-question-circle" aria-hidden="true"></i></label>
+					</div>
+					<div class="select-box">
+						<select id="cities" name="cities">
+							<option value="0" disabled selected>Wybierz miasto</option>
+							<option value="1">Gdańsk</option>
+							<option value="1">Warszawa</option>
+							<option value="1">Białystok</option>
+							<option value="1">Częstochowa</option>
+						</select>
+					</div>
+					<div>
+						<label for="facility">Placówka <i class="fa fa-question-circle" aria-hidden="true"></i></label>
+					</div>
+					<div>
+						<select id="facility" name="facility">
+							<option value="0" disabled selected>By wybrać placówkę wybierz miasto</option>
+							<option value="1">X</option>
+							<option value="1">Y</option>
+							<option value="1">Z</option>
+							<option value="1">A</option>
+						</select>
+					</div>
+					<div>
+						<label for="dates">Termin <i class="fa fa-question-circle" aria-hidden="true"></i></label>
+					</div>
+					<div class="row search-period-container">
+						<div class="col-sm-6 col-xs-12">
+							<button type="button" class="btn search-period-item active" data-period="3">
+								<label>3 dni</label>
+							</button>
+						</div>
+						<div class="col-sm-6 col-xs-12">
+							<button type="button" class="btn search-period-item" data-period="15">
+								<label>15 dni</label>
+							</button>
+						</div>
+						<div class="col-sm-6 col-xs-12">
+							<button type="button" class="btn search-period-item" data-period="30">
+								<label>30 dni</label>
+							</button>
+						</div>
+						<div class="col-sm-6 col-xs-12">
+							<button type="button" class="btn search-period-item" data-period="Inny zakres">
+								<label>Inny zakres <i class="fa fa-calendar" aria-hidden="true"></i></labe>
+							</button>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-lg-4 col-xs-12">
+					<div>
+						<label for="services">Usługi <i class="fa fa-question-circle" aria-hidden="true"></i></label>
+					</div>
+					<div>
+						<select id="services" name="services">
+							<option value="0" disabled selected>By wybrać usługę wybierz miasto</option>
+							<option value="1" hidden>Wybierz usługę</option>
+							<option value="1">Badanie EKG</option>
+							<option value="1">Cytologia</option>
+							<option value="1">Gastroskopia</option>
+							<option value="1">Kolonoskopia</option>
+						</select>
+					</div>
+					<div>
+						<label for="doctors">Lekarze <i class="fa fa-question-circle" aria-hidden="true"></i></label>
+					</div>
+					<div>
+						<select id="doctors" name="doctors">
+							<option value="0" disabled selected>By wybrać lekarza wybierz usługę</option>
+							<option value="1">Jan Kowalski</option>
+							<option value="1">Jan Wiśniewski</option>
+							<option value="1">Krzyszrof Szach</option>
+							<option value="1">Maciej Kępiśnki</option>
+						</select>
+					</div>
+
+					<div>
+						<label for="time">Pora dnia <i class="fa fa-question-circle" aria-hidden="true"></i></label>
+					</div>
+					<div class="row search-period-container">
+						<div class="col-sm-6 col-xs-12">
+							<button type="button" class="btn search-period-item2 active" data-period="Cały dzień">
+								Cały dzień
+							</button>
+						</div>
+						<div class="col-sm-6 col-xs-12">
+							<button type="button" class="btn search-period-item2" data-period="Do 11:00">
+								Do 11:00
+							</button>
+						</div>
+						<div class="col-sm-6 col-xs-12">
+							<button type="button" class="btn search-period-item2" data-period="11:00 - 16:00">
+								11:00 - 16:00
+							</button>
+						</div>
+						<div class="col-sm-6 col-xs-12">
+							<button type="button" class="btn search-period-item2" data-period="Po 16:00">
+								Po 16:00
+							</button>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-lg-4 col-xs-12">
+					<div>
+						<label for="package">Pakiet <i class="fa fa-question-circle" aria-hidden="true"></i></label>
+					</div>
+					<div>
+						<select id="package" name="package">
+							<option value="Pakiet">Pakiet: Brak pakietu</option>
+						</select>
+					</div>
+					<div>
+						<label for="language">Język <i class="fa fa-question-circle" aria-hidden="true"></i></label>
+					</div>
+					<div>
+						<select id="language" name="language">
+							<option value="Dowolny język">Dowolny język</option>
+							<option value="angielski">angielski</option>
+							<option value="niemiecki">niemiecki</option>
+							<option value="francuski">francuski</option>
+						</select>
+					</div>
+					<div class="search-container">
+						<input type="submit" class="button search" id="reservationSearchButton" value="Szukaj">
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+		crossorigin="anonymous"></script>
+	<script>
+		$(".search-period-item2").click(function () {
+
+
+			const listItems = $(".search-period-item2");
+
+
+			for (let i = 0; i < listItems.length; i++) {
+				listItems[i].classList.remove("active");
+			}
+
+
+			this.classList.add("active");
+		});
+		$(".search-period-item").click(function () {
+
+
+			const listItems = $(".search-period-item");
+
+
+			for (let i = 0; i < listItems.length; i++) {
+				listItems[i].classList.remove("active");
+			}
+
+
+			this.classList.add("active");
+		});
+
+		window.onbeforeunload = function (event) {
+			return confirm("Confirm refresh");
+		};
+		const $select3 = $('#cities'),
+			$select4 = $('#facility'),
+			$options = $select4.find('option');
+
+		$select3.on('change', function () {
+			$select4.html($options.filter('[value="' + this.value + '"]'));
+		}).trigger('change');
+
+		const $select1 = $('#cities'),
+			$select2 = $('#services'),
+			$optionsOfServices = $select2.find('option');
+
+		$select1.on('change', function () {
+			$select2.html($optionsOfServices.filter('[value="' + this.value + '"]'));
+		}).trigger('change');
+
+		const $select5 = $('#services'),
+			$select6 = $('#doctors'),
+			$optionsOfDoctors = $select6.find('option');
+
+		$select5.on('change', function () {
+			$select6.html($optionsOfDoctors.filter('[value="' + this.value + '"]'));
+		}).trigger('change');
+	</script>
+
+
+
+</body>
+
+</html>

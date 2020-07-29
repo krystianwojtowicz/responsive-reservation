@@ -1,0 +1,87 @@
+.reservation {
+	margin: 5px;
+}
+
+.box {
+	padding: 5px;
+}
+
+.reservation {
+	margin-bottom: 50px;
+}
+
+.search-period-item {
+	margin: 0 0 4px;
+	height: 38px;
+	font-size: 12px;
+}
+
+.search-period-item2 {
+	margin: 0 0 4px;
+	height: 38px;
+	font-size: 12px;
+}
+
+
+.box {
+	background-color: #0066ff;
+	border-radius: 3px;
+	color: white;
+}
+form {
+	display: flex;
+  flex-direction: column;
+}
+
+#term input[type="checkbox"] {
+	display: none;
+  }
+  
+#term span {
+	width: 100%;
+	display: inline-block;
+	padding: 10px;
+	border: 2px solid gold;
+	border-radius: 3px;
+	color: black;
+  }
+  
+#term input[type="checkbox"]:checked + span {
+	  
+  background-color: gold;
+	color: black;
+  }
+
+  .term {
+	  width: 46%;
+  }
+
+  .btn {
+	  width: 100%;
+	  background: white
+	  ;
+  }
+
+  .search-container{
+	  height: 116px;
+  }
+  .search-container input {
+	  margin-top: 86px;
+  }
+
+  .button.search {
+	  background-color: green;
+	  width: 100%;
+  }
+  
+  select {
+	  width: 100%;
+  }
+
+  .search-period-item.active {
+	background: #95b3d6;
+  }
+  
+  .search-period-item2.active {
+	background: #95b3d6;
+  }
